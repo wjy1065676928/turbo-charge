@@ -260,7 +260,7 @@ void check_required_files(uchar *battery_status, uchar *battery_capacity, uchar 
         {
             //如果匹配到了文件，则分配一个与路径字符串大小相等的内存，装入路径，并且记录相应文件数量的变量值+1
             path_len=strlen(power_supply_dir_list[j]);
-            if((path_len >= 27 && !strcmp(power_supply_dir_list[j]+path_len-27, "/constant_charge_current_max"))
+            if((path_len >= 27 && !strcmp(power_supply_dir_list[j]+path_len-27, "/current_max"))
                 || (path_len >= 19 && !strcmp(power_supply_dir_list[j]+path_len-19, "/fast_charge_current"))
                 || (path_len >= 22 && !strcmp(power_supply_dir_list[j]+path_len-22, "/thermal_input_current")))
             {
